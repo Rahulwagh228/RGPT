@@ -1,7 +1,7 @@
 
-import Footer from "@/Components/Footer";
-import Navbar from "@/Components/Navbar";
-import Sidebar from "@/Components/sidebar";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import Sidebar from "@/components/sidebar";
 
 export default function Home(){
 
