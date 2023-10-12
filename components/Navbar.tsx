@@ -68,6 +68,7 @@ import { CgMenu } from 'react-icons/cg'
 import { AiOutlineCloseCircle } from 'react-icons/ai'
 import Logo from "../app/assets/Images/Asset1.png"
 import React, { useState } from 'react'
+import Link from "next/link"
 export default function Navbar() {
 
     const [toggle, settoggle] = useState(false);
@@ -107,31 +108,31 @@ export default function Navbar() {
                         {/* <img className="a" src={Logo} alt="..." /> */}
                         <Image src={Logo} alt="..." className="h-16 w-16 rounded-full" />
                     </div>
-                    <div className="nav-link hidden  md:block md:static absolute bg-white md:min-h-fit md:w-auto min-h-[60vh] left-0 top-[20%] w-full flex md:items-center px-5">
-                        <ul className="flex md:flex-row flex-col  md:gap-10 gap-8 pt-6 font-semibold">
+                    <div className="nav-link hidden  md:block md:static absolute bg-white md:min-h-fit md:w-auto min-h-[60vh] left-0 top-[20%] w-full  md:items-center px-5">
+                        <ul className="flex md:flex-row flex-col  md:gap-10 gap-8 pt-3 pb-3 font-semibold">
                             <li>
-                                <a href="/">Home</a>
+                                <Link href="/">Home</Link>
                             </li>
                             <li>
-                                <a href="/">contact</a>
+                            <Link href="/Contact">Contact</Link>
                             </li>
                             <li>
-                                <a href="/">About</a>
+                            <Link href="/About">About</Link>
                             </li>
                             <li>
-                                <a href="/">Rgpt</a>
+                            <Link href="/">pricing</Link>
                             </li>
                             <li>
-                                <a href="/">Products</a>
+                            <Link href="/">Try-Rgpt</Link>
                             </li>
                             <li>
-                                <a href="/">Pricing</a>
+                            <Link href="/">Products</Link>
                             </li>
 
                         </ul>
                     </div>
                     <div className=" flex items-center gap-6 pt-3 pb-3">
-                        <button className="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#2561c9]">Login</button>
+                        <button className="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#2561c9]"><Link href="/login">Login</Link></button>
                         <div onClick={() => { changetogle(), navchange()}}>
                             {toggle ? <AiOutlineCloseCircle className="h-11 w-11 md:hidden" /> :
                                 <CgMenu className="h-11 w-11 md:hidden" />}
@@ -144,3 +145,6 @@ export default function Navbar() {
 
     )
 }
+
+
+// -------------Responsive nav with map ---------------

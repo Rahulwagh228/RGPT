@@ -1,16 +1,22 @@
-import Sidebar from "@/Component/Sidebar";
-import Navbar from "@/components/Navbar";
+
+import Footer from "@/Components/Footer";
+import Navbar from "@/Components/Navbar";
+import Sidebar from "@/Components/sidebar";
 
 export default function Home(){
 
   return(
     // <main className="my-gradient h-screen">
 <>
-   {/* <Sidebar /> */}
+   
    <Navbar/>
+   <Sidebar />
+    <Footer />
+
+
 </>
    
     
-  // <main />
+  
   )
 }
