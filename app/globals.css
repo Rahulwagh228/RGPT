@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* .my-gradient {background-image: linear-gradient(to right top, #ffffff, #e0d8ff, #c4b0ff, #a888ff, #8c5eff, #8c52fe, #8d44fd, #8e33fb, #a64cf8, #b963f6, #c97af4, #d691f3);
+} */
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

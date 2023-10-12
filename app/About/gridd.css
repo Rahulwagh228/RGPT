@@ -1,0 +1,17 @@
+
+
+.backgroundd{
+    background-image:linear-gradient(to right top, #000000, #2e2e2e, #585858, #878787, #b9b9b9, #b9b9b9, #b9b9b9, #b9b9b9, #878787, #585858, #2e2e2e, #000000);
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 2 / 2 / 6 / 6; }
+    .div2 { grid-area: 3 / 2 / 5 / 4; }
+    .div3 { grid-area: 3 / 4 / 5 / 6; }

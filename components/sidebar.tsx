@@ -5,6 +5,7 @@ import {TfiViewGrid} from "react-icons/tfi";
 import React, { useState } from 'react';
 import Image from "next/image";
 import Logo from "@/app/assets/Images/Asset1.png";
+import Input from "./Input";
 
 export default function Sidebar() {
   const [Open, setOpen] = useState(true);
@@ -32,6 +33,10 @@ export default function Sidebar() {
 
       <div className="p-7 text-2xl font-semibold flex-1 h-screen ">
         <h1>Home Page</h1>
+        <div className="absolute bottom-0 w-4/5">
+        <Input />
+
+        </div>
       </div>
     </div>
   )
