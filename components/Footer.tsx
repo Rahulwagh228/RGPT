@@ -54,7 +54,7 @@ export default function Footer() {
             <div className="bg-slate-500 h-80 md:h-[40vh] sm:h-[50vh]">
                 <ul className="flex justify-evenly text-xl font-bold pt-5 ">
                     {topic.map((itm, index) => (
-                        <li key={itm.id} className="cursor-pointer text-slate-300 hover:text-slate-800 hover:scale-105 duration-200">{itm.name}</li>
+                        <li key={index} className="cursor-pointer text-slate-300 hover:text-slate-800 hover:scale-105 duration-200">{itm.name}</li>
                     ))}
                 </ul>
                 <hr className="border border-slate-400 m-9 mr-20 ml-20" />
