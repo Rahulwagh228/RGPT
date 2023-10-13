@@ -32,33 +32,36 @@ export default function Footer() {
 
     const topic = [
         {
+            id:1,
             name: "About Us",
         },
         {
+            id:2,
             name: "Awards"
         },
         {
+            id:3,
             name: "Help"
         },
         {
+            id:4,
             name: "Contact"
         },
     ]
 
     return (
         <>
-            <div className="bg-slate-500 h-80 ">
+            <div className="bg-slate-500 h-80 md:h-[40vh] sm:h-[50vh]">
                 <ul className="flex justify-evenly text-xl font-bold pt-5 ">
-                    {topic.map((itm) => (
-                        <li className="cursor-pointer text-slate-300 hover:text-slate-800 hover:scale-105 duration-200">{itm.name}</li>
+                    {topic.map((itm, index) => (
+                        <li key={itm.id} className="cursor-pointer text-slate-300 hover:text-slate-800 hover:scale-105 duration-200">{itm.name}</li>
                     ))}
                 </ul>
                 <hr className="border border-slate-400 m-9 mr-20 ml-20" />
-                <div className=" w-2/3 ml-64 mr-64 text-xl text-slate-800 font-medium">
-                    <p>
+                <div className=" w-2/3 m-auto text-xl text-slate-800 font-medium ">
+                    <p className="">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius in, quas fugiat iure obcaecati, hic suscipit soluta veniam modi dolores voluptatem ab tempora, omnis ratione nisi numquam? Blanditiis commodi beatae at debitis accusamus ipsum!
                     </p>
-                </div>
                 <div>
                     <ul className="flex gap-10 justify-center pt-10">
 
@@ -78,6 +81,7 @@ export default function Footer() {
                             <Link href="/"> <BsInstagram className="h-10 w-10" /></Link>
                         </li>
                     </ul>
+                </div>
                 </div>
 
                 <div className="bg-slate-500  pb-1 pt-1">

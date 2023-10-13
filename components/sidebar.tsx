@@ -8,6 +8,7 @@ import Logo from "@/app/assets/Images/Asset1.png";
 import Input from "./Input";
 
 export default function Sidebar() {
+  
   const [Open, setOpen] = useState(true);
   const Menus = [
     {title : "Dashboard", src: ""}

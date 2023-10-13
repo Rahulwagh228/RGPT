@@ -23,12 +23,13 @@ export default function contact(){
     
     
     
+    
+    
+    
     const style = {
         backgroundImage: `url('${imageUrl[i]}')`,
+        // "opacity":0.8
     };
-    
-
-   
 
 
     setInterval(()=>{
@@ -40,12 +41,13 @@ export default function contact(){
     }, 3000);
 
     return(
-        <section className="relative bg-cover bg-center bg-no-repeat h-screen w-full transition-background-image" style={style}>
+        <section className="relative bg-cover bg-center  h-screen w-full transition-background-image" style={style}>
 
             <Navbar />
             <div className="h-screen flex justify-center items-center">
-                <button className="bg-slate-400 p-2 rounded-3xl m-2">Login first</button>
-                <button className="bg-slate-400 p-2 rounded-3xl m-2">Try Rgpt</button>
+                {/* <h1 className="text-3xl flex items-center justify-center text-white font-bold">while(alive)=>Code;</h1> <br /> */}
+                <button className="bg-purple-800 rounded-md p-3 m-2 hover:bg-purple-500">Login first</button>
+                <button className="bg-purple-800 rounded-md p-3 m-2 hover:bg-purple-500">Try Rgpt</button>
             </div>
         </section>
         

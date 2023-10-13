@@ -108,8 +108,8 @@ export default function Navbar() {
                         {/* <img className="a" src={Logo} alt="..." /> */}
                         <Image src={Logo} alt="..." className="h-16 w-16 rounded-full" />
                     </div>
-                    <div className="nav-link hidden  md:block md:static absolute bg-white md:min-h-fit md:w-auto min-h-[60vh] left-0 top-[20%] w-full  md:items-center px-5">
-                        <ul className="flex md:flex-row flex-col  md:gap-10 gap-8 pt-3 pb-3 font-semibold">
+                    <div className="nav-link hidden bg-white md:block md:static absolute  md:min-h-fit md:w-auto min-h-[60vh] left-0 top-[20%] w-full  md:items-center px-5">
+                        <ul className="flex md:flex-row flex-col md:gap-10 gap-8 pt-3 pb-3 font-semibold">
                             <li>
                                 <Link href="/">Home</Link>
                             </li>
@@ -148,3 +148,5 @@ export default function Navbar() {
 
 
 // -------------Responsive nav with map ---------------
+
+

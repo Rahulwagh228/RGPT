@@ -10,21 +10,21 @@ export default function About() {
     return (
         <>
             <Navbar />
-            <div className="flex justify-center items-center backgroundd">
+            <div className="flex md:flex-col  justify-center items-center backgroundd">
 
 
-                <div className="parent">
+                <div className="parent  md:flex-wrap">
                     <div className="div1">
                     <h1 className="text-3xl font-bold text-center text-gray-600">Meet our miscrosoft team</h1>
                     </div>
 
-                    <div className="div2 ">
+                    <div className="div2 md:block">
                     <Image src ={rahul} alt='Photo' className='rounded-full h-48 w-48'/>
                         <h1 className="text-2xl text-gray-800 font-bold text-center pt-6">Rahul Wagh</h1>
                  
                     </div>
 
-                    <div className="div3 ">
+                    <div className="div3 md: md:flex-col">
                         <Image src={rakhi} alt='photo' className='rounded-full h-48 w-48'/>
                         <h1 className="text-2xl text-gray-800 font-bold text-center pt-6">Rakhi Desale</h1>
                     </div>
